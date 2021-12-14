@@ -56,7 +56,7 @@ tipJS.controller({
 
 			if ( preparing.indexOf("?") >= 0 ) {
 
-				if (param.typ === "String") {
+				if (param.typ === "String" || param.typ === "Date") {
 					param.val = "'"+param.val+"'";
 				}
 				preparing = preparing.replace("?", param.val);
